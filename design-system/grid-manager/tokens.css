@@ -1,0 +1,35 @@
+/* Generated from tokens.json; update tokens.json first. */
+:root {
+  --color-primary: #111315;
+  --color-on-primary: #F4F3EF;
+  --color-secondary: #C92E26;
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #E03A30;
+  --color-on-accent: #111315;
+  --color-background: #F4F3EF;
+  --color-foreground: #111315;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #111315;
+  --color-muted: #ECEBE6;
+  --color-muted-foreground: #62676A;
+  --color-border: #D7D6D1;
+  --color-destructive: #C92E26;
+  --color-on-destructive: #FFFFFF;
+  --color-ring: #E03A30;
+  --color-paper-alt: #E9E8E2;
+  --color-paper-bright: #F8F7F3;
+  --color-editorial-line: rgba(17, 19, 21, .16);
+  --color-editorial-line-dark: rgba(244, 243, 239, .20);
+  --font-heading: Space Grotesk, sans-serif;
+  --font-body: Inter, sans-serif;
+  --font-data: IBM Plex Mono, monospace;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --layout-content-width: 1320px;
+  --motion-fast: 160ms;
+}
