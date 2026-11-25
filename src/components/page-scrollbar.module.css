@@ -1,0 +1,62 @@
+.rail {
+  position: fixed;
+  inset: 4px 0 4px auto;
+  z-index: 50;
+  width: 14px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scaleX(.3);
+  transform-origin: right;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.rail[data-visible="true"],
+.rail:focus-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.rail:focus-visible {
+  outline: 2px solid var(--track-red);
+  outline-offset: -2px;
+}
+
+.thumb {
+  position: absolute;
+  inset: 0 2px auto auto;
+  width: 8px;
+  border-radius: 12px;
+  background: var(--track-red);
+  pointer-events: none;
+}
+
+.rail:hover .thumb,
+.rail:active .thumb { background: #ffa49b; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .rail { transition: opacity 180ms ease, transform 180ms ease; }
+  .thumb { transition: background-color 150ms ease; }
+}
+
+@media (max-width: 800px), (hover: none), (pointer: coarse) {
+  .rail {
+    width: 20px;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .rail:focus-visible { outline-color: Highlight; }
+  .thumb,
+  .rail:hover .thumb,
+  .rail:active .thumb {
+    forced-color-adjust: none;
+    background: CanvasText;
+  }
+}
